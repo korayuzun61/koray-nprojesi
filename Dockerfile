@@ -11,7 +11,7 @@ ENV VIRTUAL_ENV=/opt/venv
 RUN pip install --upgrade pip
 RUN pip install virtualenv && python -m virtualenv $VIRTUAL_ENV
 
-ENV PATH="$VIRTUAL_ENVbin:$PATH"
+ENV PATH="$ VIRTUAL_ENVbin:$PATH"
 ADD ./requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 
