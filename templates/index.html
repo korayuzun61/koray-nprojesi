@@ -1,59 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>index</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-</head>
-<body>
-<nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/contact">Contact</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">
-                        Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                </li>
-            </ul>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</nav>
-<div class="container">
+ {% extends 'layout.html' %}
+{% include 'includes/head.html' with title='Home' %}
+ {% block content %}
     <div class="row">
         <div class="col-md-12">
             <h1>djangoProjectApp</h1>
         </div>
-
-        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad at beatae cupiditate, dolor, esse est facilis itaque laborum libero maxime minima perferendis possimus quaerat quod reiciendis rerum sunt tempora!</span><span>Architecto culpa est laboriosam minima nobis repudiandae tempore. Consequuntur culpa cupiditate dolores earum et eum ex, facilis impedit magnam minima nam officia perferendis, quibusdam repellat saepe sed vel, vero vitae.</span><span>Ab aliquid asperiores aspernatur assumenda commodi consequatur, deleniti doloremque eveniet explicabo facilis harum id itaque libero molestias officia perferendis possimus vel. Ab culpa cupiditate dolorum exercitationem explicabo illum nulla perspiciatis?</span><span>Blanditiis consectetur consequuntur corporis, cupiditate distinctio doloremque esse harum iste minima necessitatibus neque nisi repellat sapiente sint tempore totam ullam? A adipisci consequatur laboriosam minus nam placeat velit veritatis vero?</span><span>Eum laboriosam laudantium nulla quae. Aliquid corporis cupiditate ipsam iste quo voluptates. Aliquid, autem earum eius illo impedit incidunt maxime modi quaerat repellat saepe. Corporis doloribus facilis repellat rerum veritatis!</span><span>Dolore doloremque fuga illum laboriosam laudantium nihil quas, quis voluptatibus? Aperiam corporis, distinctio dolorem doloremque esse excepturi fugiat illum ipsum itaque iure non repellendus unde? Assumenda dolores fuga maiores nihil?</span><span>Corporis debitis et, excepturi expedita nam nihil odio reiciendis sed suscipit tempora? Accusamus architecto beatae consequatur cupiditate dolor doloremque, eos excepturi expedita magni nulla perferendis quis ratione repellat suscipit tempore.</span><span>A consequuntur doloremque suscipit? Atque aut consequatur deserunt dicta explicabo facere facilis harum ipsam rem voluptatem! Dignissimos distinctio, eveniet, impedit laudantium magnam maxime minima pariatur provident, quae reiciendis tempora voluptatibus.</span><span>A accusamus aperiam architecto, aut autem blanditiis dignissimos distinctio facilis in ipsum iure laborum magni minima molestiae, molestias nostrum pariatur perferendis porro provident reprehenderit temporibus velit, voluptatibus. Autem, cumque, deserunt!</span><span>Ad cum deserunt eius eligendi excepturi exercitationem facere itaque possimus provident veniam! Doloribus iure nulla perferendis quam. A autem, commodi cum deleniti distinctio in ipsa nisi, perspiciatis possimus, quaerat quisquam.</span>
+       <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad at beatae cupiditate, dolor, esse est facilis itaque laborum libero maxime minima perferendis possimus quaerat quod reiciendis rerum sunt tempora!</span><span>Architecto culpa est laboriosam minima nobis repudiandae tempore. Consequuntur culpa cupiditate dolores earum et eum ex, facilis impedit magnam minima nam officia perferendis, quibusdam repellat saepe sed vel, vero vitae.</span><span>Ab aliquid asperiores aspernatur assumenda commodi consequatur, deleniti doloremque eveniet explicabo facilis harum id itaque libero molestias officia perferendis possimus vel. Ab culpa cupiditate dolorum exercitationem explicabo illum nulla perspiciatis?</span><span>Blanditiis consectetur consequuntur corporis, cupiditate distinctio doloremque esse harum iste minima necessitatibus neque nisi repellat sapiente sint tempore totam ullam? A adipisci consequatur laboriosam minus nam placeat velit veritatis vero?</span><span>Eum laboriosam laudantium nulla quae. Aliquid corporis cupiditate ipsam iste quo voluptates. Aliquid, autem earum eius illo impedit incidunt maxime modi quaerat repellat saepe. Corporis doloribus facilis repellat rerum veritatis!</span><span>Dolore doloremque fuga illum laboriosam laudantium nihil quas, quis voluptatibus? Aperiam corporis, distinctio dolorem doloremque esse excepturi fugiat illum ipsum itaque iure non repellendus unde? Assumenda dolores fuga maiores nihil?</span><span>Corporis debitis et, excepturi expedita nam nihil odio reiciendis sed suscipit tempora? Accusamus architecto beatae consequatur cupiditate dolor doloremque, eos excepturi expedita magni nulla perferendis quis ratione repellat suscipit tempore.</span><span>A consequuntur doloremque suscipit? Atque aut consequatur deserunt dicta explicabo facere facilis harum ipsam rem voluptatem! Dignissimos distinctio, eveniet, impedit laudantium magnam maxime minima pariatur provident, quae reiciendis tempora voluptatibus.</span><span>A accusamus aperiam architecto, aut autem blanditiis dignissimos distinctio facilis in ipsum iure laborum magni minima molestiae, molestias nostrum pariatur perferendis porro provident reprehenderit temporibus velit, voluptatibus. Autem, cumque, deserunt!</span><span>Ad cum deserunt eius eligendi excepturi exercitationem facere itaque possimus provident veniam! Doloribus iure nulla perferendis quam. A autem, commodi cum deleniti distinctio in ipsa nisi, perspiciatis possimus, quaerat quisquam.</span>
         </p>
         <div class="card" style="width: 18rem;">
             <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
@@ -65,11 +17,10 @@
             </div>
         </div>
     </div>
-</div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-
-
-</body>
-</html>
+{% endblock %}
+     {% block extra_scripts %}
+         <script>
+         console.log('Hello World');
+         </script>
+        {% endblock %}
+    
