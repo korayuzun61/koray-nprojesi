@@ -1,20 +1,21 @@
  {% extends 'layout.html' %}
+{% load static %}
 {% include 'includes/head.html' with title='Home' %}
  {% block content %}
     <div class="row">
         <div class="col-md-12">
-            <h1>djangoProjectApp</h1>
+            <h1 class="myHeader">djangoProjectApp</h1>
         </div>
        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus ad at beatae cupiditate, dolor, esse est facilis itaque laborum libero maxime minima perferendis possimus quaerat quod reiciendis rerum sunt tempora!</span><span>Architecto culpa est laboriosam minima nobis repudiandae tempore. Consequuntur culpa cupiditate dolores earum et eum ex, facilis impedit magnam minima nam officia perferendis, quibusdam repellat saepe sed vel, vero vitae.</span><span>Ab aliquid asperiores aspernatur assumenda commodi consequatur, deleniti doloremque eveniet explicabo facilis harum id itaque libero molestias officia perferendis possimus vel. Ab culpa cupiditate dolorum exercitationem explicabo illum nulla perspiciatis?</span><span>Blanditiis consectetur consequuntur corporis, cupiditate distinctio doloremque esse harum iste minima necessitatibus neque nisi repellat sapiente sint tempore totam ullam? A adipisci consequatur laboriosam minus nam placeat velit veritatis vero?</span><span>Eum laboriosam laudantium nulla quae. Aliquid corporis cupiditate ipsam iste quo voluptates. Aliquid, autem earum eius illo impedit incidunt maxime modi quaerat repellat saepe. Corporis doloribus facilis repellat rerum veritatis!</span><span>Dolore doloremque fuga illum laboriosam laudantium nihil quas, quis voluptatibus? Aperiam corporis, distinctio dolorem doloremque esse excepturi fugiat illum ipsum itaque iure non repellendus unde? Assumenda dolores fuga maiores nihil?</span><span>Corporis debitis et, excepturi expedita nam nihil odio reiciendis sed suscipit tempora? Accusamus architecto beatae consequatur cupiditate dolor doloremque, eos excepturi expedita magni nulla perferendis quis ratione repellat suscipit tempore.</span><span>A consequuntur doloremque suscipit? Atque aut consequatur deserunt dicta explicabo facere facilis harum ipsam rem voluptatem! Dignissimos distinctio, eveniet, impedit laudantium magnam maxime minima pariatur provident, quae reiciendis tempora voluptatibus.</span><span>A accusamus aperiam architecto, aut autem blanditiis dignissimos distinctio facilis in ipsum iure laborum magni minima molestiae, molestias nostrum pariatur perferendis porro provident reprehenderit temporibus velit, voluptatibus. Autem, cumque, deserunt!</span><span>Ad cum deserunt eius eligendi excepturi exercitationem facere itaque possimus provident veniam! Doloribus iure nulla perferendis quam. A autem, commodi cum deleniti distinctio in ipsa nisi, perspiciatis possimus, quaerat quisquam.</span>
         </p>
         <div class="card" style="width: 18rem;">
-            <img src="https://placehold.co/600x400" class="card-img-top" alt="...">
+            <img src="{% get_media_prefix %}mercedes.jpg" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Card title</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
                     card's content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
+                <a href="#" class="btn btn-primary">Go somewhere</a>  
+            </div> 
         </div>
     </div>
 {% endblock %}
